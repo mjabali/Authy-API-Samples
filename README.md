@@ -16,7 +16,7 @@ Here you will learn how to use the Authy REST APIs to perform the user registrat
 Create a free [Authy account](https://www.authy.com/developers/) if you don't
 have one already, and then connect it to your Twilio account.
 
-### Running the sample scripts
+### Setup the environment
 
 Each one of these scripts is designed to run independently and perform the designated functionality specified on its file name.
 
@@ -34,16 +34,14 @@ Each one of these scripts is designed to run independently and perform the desig
    ```
 
    If you are using a different operating system, make sure that all the variables from the .api.env file are loaded into your environment.
+   
+### Run the sample scripts
 
 1. User Registration - userRegistration.sh
 
-1. Send SMS - sendSMS_Ignored.sh
+1. Send SMS & Force Send SMS - sendSMS_Ignored.sh / sendSMS.sh
 
-1. Force Send SMS - sendSMS.sh
-
-1. Make Voice Call - makeCall_Ignored.sh
-
-1. Force Make Voice Call - makeCall.sh
+1. Make Voice Call & Force Make Voice Call - makeCall_Ignored.sh / makeCall.sh
 
 1. Verify Token - verifyToken.sh
 
