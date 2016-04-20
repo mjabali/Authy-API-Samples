@@ -18,7 +18,7 @@ have one already, and then connect it to your Twilio account.
 
 ### Setup the environment
 
-Each one of these scripts is designed to run independently and perform the designated functionality specified on its file name.
+Each one of these scripts is designed to run independently and perform the designated functionality specified on the file name.
 
 1. First clone this repository and `cd` into it
 
