@@ -27,26 +27,25 @@ Each one of these scripts is designed to run independently and perform the desig
    $ cd Authy-API-Samples
    ```
 
-1. Update the .api.env with your user/environment/API information and then load the variables into your environment.
-If you are using a UNIX operating system, just use the source command to load the variables into your environment.
+1. Update the .api.env with your user/environment/API information and then load the variables into your environment. If you are using a UNIX operating system, just use the source command to load the variables into your environment.
+ 
+   ```bash
+   $ source .api.env
+   ```
 
-```bash
-$ source .api.env
-```
+   If you are using a different operating system, make sure that all the variables from the .api.env file are loaded into your environment.
 
-If you are using a different operating system, make sure that all the variables from the .api.env file are loaded into your environment.
+1. User Registration - userRegistration.sh
 
-1. User Registration
+1. Send SMS - sendSMS_Ignored.sh
 
-1. Send SMS
+1. Force Send SMS - sendSMS.sh
 
-1. Force Send SMS
+1. Make Voice Call - makeCall_Ignored.sh
 
-1. Make Voice Call
+1. Force Make Voice Call - makeCall.sh
 
-1. Force Make Voice Call
-
-1. Verify Token
+1. Verify Token - verifyToken.sh
 
 
 That's it!
