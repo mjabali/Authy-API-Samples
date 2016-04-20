@@ -37,6 +37,8 @@ Each one of these scripts is designed to run independently and perform the desig
    
 ### Run the sample scripts
 
+Before you run any of the following scripts, make sure you have execution permissions based on your operating system.
+
 1. User Registration - userRegistration.sh
 
 1. Send SMS & Force Send SMS - sendSMS_Ignored.sh / sendSMS.sh
