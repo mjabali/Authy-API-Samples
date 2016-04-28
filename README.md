@@ -43,9 +43,13 @@ Before you run any of the following scripts, make sure you have execution permis
 
 1. Send SMS & Force Send SMS - sendSMS_Ignored.sh / sendSMS.sh
 
-1. Make Voice Call & Force Make Voice Call - makeCall_Ignored.sh / makeCall.sh
+1. Make Phone Call - makeCall.sh
 
 1. Verify Token - verifyToken.sh
+
+1. Create OneTouch Approval Request - createApprovalRequest.sh
+
+1. Check OneTouch Reqeuest Status - checkRequestStatus.sh
 
 
 That's it!
