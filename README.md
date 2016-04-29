@@ -11,10 +11,11 @@ Here you will learn how to use the Authy REST APIs to perform the user registrat
 
 ## Quickstart
 
-### Create an Authy app
+### Create a Twilio account
 
-Create a free [Authy account](https://www.authy.com/developers/) if you don't
-have one already, and then connect it to your Twilio account.
+Create a free [Twilio account](https://www.twilio.com/user/account/authy/getting-started) and access the Authy dashboard.
+
+You can follow the step by step guide provided [here](https://goo.gl/B3nuo5).
 
 ### Setup the environment
 
