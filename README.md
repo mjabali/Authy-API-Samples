@@ -40,6 +40,8 @@ Each one of these scripts is designed to run independently and perform the desig
 
 Before you run any of the following scripts, make sure you have execution permissions based on your operating system.
 
+I'd recommend you to take a look at the API docs for [TOTP - Time-based One Time Password](http://docs.authy.com/totp.html) and the [Authy OneTouch](http://docs.authy.com/onetouch.html) to get a good understading about what the following scripts do and how they work.
+
 1. User Registration - userRegistration.sh
 
 1. Send SMS & Force Send SMS - sendSMS_Ignored.sh / sendSMS.sh
