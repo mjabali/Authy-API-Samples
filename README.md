@@ -52,7 +52,7 @@ I'd recommend you to take a look at the API docs for [TOTP - Time-based One Time
 
 1. Create OneTouch Approval Request - createApprovalRequest.sh
 
-1. Check OneTouch Reqeuest Status - checkRequestStatus.sh
+1. Check OneTouch Request Status - checkRequestStatus.sh
 
 
 That's it!
