@@ -40,7 +40,7 @@ Each one of these scripts is designed to run independently and perform the desig
 
 Before you run any of the following scripts, make sure you have execution permissions based on your operating system.
 
-I'd recommend you to take a look at the API docs for [TOTP - Time-based One Time Password](http://docs.authy.com/totp.html) and the [Authy OneTouch](http://docs.authy.com/onetouch.html) to get a good understading about what the following scripts do and how they work.
+I'd recommend you to take a look at the API docs for [TOTP - Time-based One Time Password](http://docs.authy.com/totp.html), [Phone Intelligence](http://docs.authy.com/phone_intelligence.html), [Phone Verification](http://docs.authy.com/phone_verification.html) and the [Authy OneTouch](http://docs.authy.com/onetouch.html) to get a good understading about what the following scripts do and how they work.
 
 1. User Registration - userRegistration.sh
 
@@ -53,6 +53,10 @@ I'd recommend you to take a look at the API docs for [TOTP - Time-based One Time
 1. Create OneTouch Approval Request - createApprovalRequest.sh
 
 1. Check OneTouch Request Status - checkRequestStatus.sh
+
+1. Phone Intelligence - phoneIntelligence.sh
+
+1. Phone Verification - phoneVerificatioRequest.sh / phoneVerificationCheck.sh
 
 
 That's it!
