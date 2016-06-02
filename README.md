@@ -1,7 +1,3 @@
-<a href="http://twilio.com/signal">![](https://s3.amazonaws.com/baugues/signal-logo.png)</a>
-
-Join us in San Francisco May 24-25th to [learn directly from the developers who build Authy](https://www.twilio.com/signal/schedule/2crLXWsVZaA2WIkaCUyYOc/aut).
-
 # Two-Factor Authentication with Authy REST APIs
 
 Here you will learn how to use the Authy REST APIs to perform the user registration, send SMS, place a voice call, verify the token, etc.
@@ -24,7 +20,7 @@ Each one of these scripts is designed to run independently and perform the desig
 1. First clone this repository and `cd` into it
 
    ```bash
-   $ git clone git@github.com:mjabali/Authy-API-Samples.git
+   $ git clone git@github.com:AuthySE/Authy-API-Samples.git
    $ cd Authy-API-Samples
    ```
 
