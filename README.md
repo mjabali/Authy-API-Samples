@@ -20,7 +20,7 @@ Each one of these scripts is designed to run independently and perform the desig
 1. First clone this repository and `cd` into it
 
    ```bash
-   $ git clone git@github.com:mjabali/Authy-API-Samples.git
+   $ git clone git@github.com:AuthySE/Authy-API-Samples.git
    $ cd Authy-API-Samples
    ```
 
