@@ -1,10 +1,5 @@
 ![Authy](https://raw.githubusercontent.com/AuthySE/Authy-API-Samples/master/authy-logo.png)
 
-Join us on Wednesday, June 22, 2016 for a Live Webinar featuring:
-
-[Buy vs. Build: How SendGrid Implemented 2FA Using Authy](http://bit.ly/1PspEdA)
-
-
 # Two-Factor Authentication with Authy REST APIs
 
 Here you will learn how to use the Authy REST APIs to perform the user registration, send SMS, place a voice call, verify the token, etc.
