@@ -56,6 +56,8 @@ All the API calls described below require that you send the Authy API Key with y
 
 1. **Phone Verification - phoneVerificatioRequest.sh / phoneVerificationCheck.sh** - The Authy Phone Verification API allows you to verify that the user has the device in their possession. The Authy Phone Verification API lets you request a verification code to be sent to the user and also verify that the code received by the user is valid.
 
+1. **Phone Verification with Custom Message - customPhoneVerification.sh** - If you need to overwrite the default Phone Verification message sent to the users you can request Authy to enable custom messages for you. Once enabled, it will allow you to send any text you want with or without the code. You can inject a Phone Verification code in the message by using the string {{code}}.
+
 
 That's it!
 
