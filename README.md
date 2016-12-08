@@ -24,13 +24,13 @@ Each one of these scripts is designed to run independently and perform the desig
    $ cd Authy-API-Samples
    ```
 
-1. Update the .api.env with your user/environment/API information and then load the variables into your environment. If you are using a UNIX operating system, just use the source command to load the variables into your environment.
+1. Update the .api.env file if you are on macOS/Linux or the .api.env.bat file with your user/environment/API information and then load the variables into your environment. If you are using macOS or Linux operating systems, just use the source command to load the variables into your environment.
  
    ```bash
    $ source .api.env
    ```
 
-   If you are using a different operating system, make sure that all the variables from the .api.env file are loaded into your environment.
+   If you are using Windows, execute the .api.env.bat file on a command prompt session to make sure all variables are loaded into your environment.
    
 ### Run the sample scripts
 
@@ -40,23 +40,23 @@ I'd recommend you to take a look at the API docs for [TOTP - Time-based One Time
 
 All the API calls described below require that you send the Authy API Key with your request.
 
-1. **User Registration - userRegistration.sh** - Before you can secure a user's login you need to create an Authy user. Authy requires you to send an email, cellphone and country code for the user to be registered. In response you get an Authy ID which you must then store with your user's profile information in your own application/database.
+1. **User Registration - userRegistration.sh|.bat** - Before you can secure a user's login you need to create an Authy user. Authy requires you to send an email, cellphone and country code for the user to be registered. In response you get an Authy ID which you must then store with your user's profile information in your own application/database.
 
-1. **Send SMS & Force Send SMS - sendSMS_Ignored.sh / sendSMS.sh** - Probably the most common way of doing Two-Factor Authentication is via SMS. While insecure and not providing the best user experience, you can request a SMS message to be sent to the user with the one time passcode. By default, this call will be ignored if the user has downloaded and registered the Authy mobile app against their phone number (sendSMS_Ignored.sh). This can be overriden using the ```force=true``` option (sendSMS.sh) 
+1. **Send SMS & Force Send SMS - sendSMS_Ignored.sh|.bat / sendSMS.sh|.bat** - Probably the most common way of doing Two-Factor Authentication is via SMS. While insecure and not providing the best user experience, you can request a SMS message to be sent to the user with the one time passcode. By default, this call will be ignored if the user has downloaded and registered the Authy mobile app against their phone number (sendSMS_Ignored.sh|.bat). This can be overriden using the ```force=true``` option (sendSMS.sh|.bat) 
 
-1. **Make Phone Call - makeCall.sh** - For users that don't have a smartphone or having trouble receiving one time passcodes via SMS, Authy allows you to use phone calls instead. By default, this call will be ignored if the user has downloaded and registered the Authy mobile app against their phone number. This can be overriden using the ```force=true``` option (sendSMS.sh) 
+1. **Make Phone Call - makeCall.sh|.bat** - For users that don't have a smartphone or having trouble receiving one time passcodes via SMS, Authy allows you to use phone calls instead. By default, this call will be ignored if the user has downloaded and registered the Authy mobile app against their phone number. This can be overriden using the ```force=true``` option. 
 
-1. **Verify Token - verifyToken.sh** - To verify a token simply pass in the token that the user entered and the Authy ID of the user. The Authy API response will tell you if the token is valid or not.
+1. **Verify Token - verifyToken.sh|.bat** - To verify a token simply pass in the token that the user entered and the Authy ID of the user. The Authy API response will tell you if the token is valid or not.
 
-1. **Create OneTouch Approval Request - createApprovalRequest.sh** - To create an OneTouch approval request, send the details in the request to inform the user and control the expiration time. Then, let the user take an action in the Authy mobile app by pressing 'Approve' or 'Deny'. Authy also provides a mobile SDK where you can provide a similar experience with an 100% branded mobile app. 
+1. **Create OneTouch Approval Request - createApprovalRequest.sh|.bat** - To create an OneTouch approval request, send the details in the request to inform the user and control the expiration time. Then, let the user take an action in the Authy mobile app by pressing 'Approve' or 'Deny'. Authy also provides a mobile SDK where you can provide a similar experience with an 100% branded mobile app. 
 
-1. **Check OneTouch Request Status - checkRequestStatus.sh** - It's recommended that you use the OneTouch callback (set up in the Authy application console) to your application requesting the approval request but you can also poll for status updates.
+1. **Check OneTouch Request Status - checkRequestStatus.sh|.bat** - It's recommended that you use the OneTouch callback (set up in the Authy application console) to your application requesting the approval request but you can also poll for status updates.
 
-1. **Phone Intelligence - phoneIntelligence.sh** - Provide the phone number and get more information about it. Things like type of phone line (VOIP, Cellphone, Landline, etc), whether the phone was ported to another carrier, the name of the service provider, etc.
+1. **Phone Intelligence - phoneIntelligence.sh|.bat** - Provide the phone number and get more information about it. Things like type of phone line (VOIP, Cellphone, Landline, etc), whether the phone was ported to another carrier, the name of the service provider, etc.
 
-1. **Phone Verification - phoneVerificatioRequest.sh / phoneVerificationCheck.sh** - The Authy Phone Verification API allows you to verify that the user has the device in their possession. The Authy Phone Verification API lets you request a verification code to be sent to the user and also verify that the code received by the user is valid.
+1. **Phone Verification - phoneVerificatioRequest.sh|.bat / phoneVerificationCheck.sh|.bat** - The Authy Phone Verification API allows you to verify that the user has the device in their possession. The Authy Phone Verification API lets you request a verification code to be sent to the user and also verify that the code received by the user is valid.
 
-1. **Phone Verification with Custom Message - customPhoneVerification.sh** - If you need to overwrite the default Phone Verification message sent to the users you can request Authy to enable custom messages for you. Once enabled, it will allow you to send any text you want with or without the code. You can inject a Phone Verification code in the message by using the string {{code}}.
+1. **Phone Verification with Custom Message - customPhoneVerification.sh|.bat** - If you need to overwrite the default Phone Verification message sent to the users you can request Authy to enable custom messages for you. Once enabled, it will allow you to send any text you want with or without the code. You can inject a Phone Verification code in the message by using the string {{code}}.
 
 
 That's it!
