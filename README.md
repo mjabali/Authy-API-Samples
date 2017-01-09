@@ -58,6 +58,8 @@ All the API calls described below require that you send the Authy API Key with y
 
 1. **Phone Verification with Custom Message - customPhoneVerification.sh|.bat** - If you need to overwrite the default Phone Verification message sent to the users you can request Authy to enable custom messages for you. Once enabled, it will allow you to send any text you want with or without the code. You can inject a Phone Verification code in the message by using the string {{code}}.
 
+1. **Delete User - deleteUser.sh|bat** - If you want to remove users from your application you can use the delete API. Note, deleting a user will NOT immediately disable token verifications, as a 24 hour delay is typical before the user is permanently removed from the application.
+
 
 That's it!
 
