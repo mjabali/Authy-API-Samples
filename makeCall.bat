@@ -6,5 +6,5 @@ echo Request
 echo curl -i "https://api.authy.com/protected/json/call/%%AUTHY_ID%%?api_key=%%AUTHY_API_KEY%%&force=true"
 echo.
 echo Response
-curl -i "http://api.authy.com/protected/json/call/%AUTHY_ID%?api_key=%AUTHY_API_KEY%&force=true"
+curl --silent "https://api.authy.com/protected/json/call/%AUTHY_ID%?api_key=%AUTHY_API_KEY%&force=true" | underscore print --outfmt pretty
 echo.

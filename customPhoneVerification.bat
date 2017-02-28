@@ -10,5 +10,5 @@ echo -d country_code=\$USER_COUNTRY_CODE
 echo -d custom_message="Your custom message goes here. Custom code is: {{code}}"
 echo.
 echo Response
-curl -X POST "https://api.authy.com/protected/json/phones/verification/start?api_key=%AUTHY_API_KEY%" -d via=sms -d phone_number=%USER_PHONE% -d country_code=%USER_COUNTRY% -d custom_message="Your custom message goes here. Custom code is: {{code}}"
+curl --silent -X POST "https://api.authy.com/protected/json/phones/verification/start?api_key=%AUTHY_API_KEY%" -d via=sms -d phone_number=%USER_PHONE% -d country_code=%USER_COUNTRY% -d custom_message="Your custom message goes here. Custom code is: {{code}}" | underscore print --outfmt pretty
 echo.
