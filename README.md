@@ -32,7 +32,7 @@ Each one of these scripts is designed to run independently and perform the desig
 
    If you are using Windows, execute the api.env.bat file on a command prompt session to make sure all variables are loaded into your environment. Make sure you have [cURL](https://curl.haxx.se/download.html) installed before you run any of the sample scripts on Windows.
    
-1. Install [underscore-cli](https://www.npmjs.com/package/underscore-cli) for simple pretty print of the JSON API response
+1. Install [underscore-cli](https://www.npmjs.com/package/underscore-cli) for simple pretty print of the JSON API response. Follow the link [here](https://github.com/ddopson/underscore-cli#installing-underscore-cli) for detailed installation instructions. API responses are piped into underscore-cli for pretty print of the JSON payload.
 
 ### Run the sample scripts
 
