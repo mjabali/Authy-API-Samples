@@ -54,8 +54,6 @@ All the API calls described below require that you send the Authy API Key with y
 
 1. **Check OneTouch Request Status - checkRequestStatus.sh|.bat** - It's recommended that you use the OneTouch callback (set up in the Authy application console) to your application requesting the approval request but you can also poll for status updates.
 
-1. **Phone Intelligence - phoneIntelligence.sh|.bat** - Provide the phone number and get more information about it. Things like type of phone line (VOIP, Cellphone, Landline, etc), whether the phone was ported to another carrier, the name of the service provider, etc.
-
 1. **Phone Verification - phoneVerificatioRequest.sh|.bat / phoneVerificationCheck.sh|.bat** - The Authy Phone Verification API allows you to verify that the user has the device in their possession. The Authy Phone Verification API lets you request a verification code to be sent to the user and also verify that the code received by the user is valid.
 
 1. **Phone Verification with Custom Message - customPhoneVerification.sh|.bat** - If you need to overwrite the default Phone Verification message sent to the users you can request Authy to enable custom messages for you. Once enabled, it will allow you to send any text you want with or without the code. You can inject a Phone Verification code in the message by using the string {{code}}.
