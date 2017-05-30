@@ -60,6 +60,7 @@ All the API calls described below require that you send the Authy API Key with y
 
 1. **Delete User - deleteUser.sh|bat** - If you want to remove users from your application you can use the delete API. Note, deleting a user will NOT immediately disable token verifications, as a 24 hour delay is typical before the user is permanently removed from the application.
 
+1. **User Status - userStatus.sh|bat** - Retrieves user details such as country code, the last 4 digits of the user's phone number, a list of the user's devices, if the user has registered with the Authy mobile app or the Authy Desktop app and if the user has used a valid code before.
 
 That's it!
 
