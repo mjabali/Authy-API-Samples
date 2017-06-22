@@ -9,5 +9,5 @@ echo -d phone_number=%%PHONE_NUMBER%%
 echo -d verification_code=%%VERIFICATION_CODE%%
 echo.
 echo Response
-curl --silent "https://api.authy.com/protected/%AUTHY_API_FORMAT%/phones/verification/check?api_key=%AUTHY_API_KEY%&phone_number=%USER_PHONE%&country_code=%USER_COUNTRY%&verification_code=%1" | underscore print --outfmt pretty
+curl --silent "https://api.authy.com/protected/%AUTHY_API_FORMAT%/phones/verification/check?api_key=%AUTHY_API_KEY%&phone_number=%USER_PHONE%&country_code=%USER_COUNTRY%&verification_code=%1"
 echo.
